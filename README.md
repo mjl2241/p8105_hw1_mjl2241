@@ -2,4 +2,3 @@
 
 
 this is my work for P8105 hw 1 
-git push -u origin master
