@@ -43,7 +43,7 @@ I'm able to print the mean of samp and samp_gt_0, but not char_vec and factor_ve
 applying as.numeric:
 
 this function shows why the average of samp_gt_0 was 0.5, and why average of charcter variable could not be calculated. 
-```{r convert to numeric}
+```{r convert to numeric, results = "hide"}
 as.numeric(logical)
 as.numeric(char)
 as.numeric(factor)
@@ -57,3 +57,9 @@ as.numeric(as.factor(logical))*samp
 ```
 
 ##Problem 2
+downloading penguins dataset
+```{r}
+install.packages("palmerpenguins")
+data("penguins", package = "palmerpenguins")
+
+```
