@@ -61,5 +61,19 @@ downloading penguins dataset
 ```{r}
 install.packages("palmerpenguins")
 data("penguins", package = "palmerpenguins")
+penguins
+nrow(penguins)
+ncol(penguins)
+colnames(penguins)
+penguins2 = drop_na(penguins,flipper_length_mm, bill_length_mm)
+mean(pull(penguins2, flipper_length_mm))
 
 ```
+
+a short description of penguins data set:
+1. This dataset shows the different species, island, body mass, gender, and the birth year of various penguins
+2. There are  344 rows, and 8 columns ( "species", "island","bill_length_mm","bill_depth_mm","flipper_length_mm", "body_mass_g","sex","year")
+3. the mean flipper length is 200.91 mm 
+Make a scatterplot of flipper_length_mm (y) vs bill_length_mm (x); color points using the species variable (adding color = ... inside of aes in your ggplot code should help).
+
+Export your first scatterplot to your project directory using ggsave
